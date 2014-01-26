@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
-@interface WViewController : GLKViewController
+@interface WViewController : GLKViewController <UIAccelerometerDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *penguin;
+@property (strong, nonatomic) IBOutlet UILabel *pts;
 
 @end

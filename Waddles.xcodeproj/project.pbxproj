@@ -16,7 +16,6 @@
 		492647C81891937200C4B953 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 492647C71891937200C4B953 /* main.m */; };
 		492647CC1891937200C4B953 /* WAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 492647CB1891937200C4B953 /* WAppDelegate.m */; };
 		492647CF1891937200C4B953 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492647CD1891937200C4B953 /* Main_iPhone.storyboard */; };
-		492647D21891937200C4B953 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492647D01891937200C4B953 /* Main_iPad.storyboard */; };
 		492647D41891937200C4B953 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 492647D31891937200C4B953 /* Shader.fsh */; };
 		492647D61891937200C4B953 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 492647D51891937200C4B953 /* Shader.vsh */; };
 		492647D91891937300C4B953 /* WViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492647D81891937300C4B953 /* WViewController.m */; };
@@ -26,6 +25,15 @@
 		492647E41891937300C4B953 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492647BB1891937200C4B953 /* UIKit.framework */; };
 		492647EC1891937300C4B953 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 492647EA1891937300C4B953 /* InfoPlist.strings */; };
 		492647EE1891937300C4B953 /* WaddlesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492647ED1891937300C4B953 /* WaddlesTests.m */; };
+		492647F81891939F00C4B953 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492647F71891939F00C4B953 /* GameKit.framework */; };
+		492647FA1891A8B600C4B953 /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 492647F91891A8B500C4B953 /* penguin.png */; };
+		492647FC1891A8BD00C4B953 /* snowflake.png in Resources */ = {isa = PBXBuildFile; fileRef = 492647FB1891A8BD00C4B953 /* snowflake.png */; };
+		492647FE1891A8C700C4B953 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 492647FD1891A8C700C4B953 /* background.png */; };
+		492648001891A95800C4B953 /* penguin_noBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 492647FF1891A95800C4B953 /* penguin_noBg.png */; };
+		49407967189443BA000B85D4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 49407966189443BA000B85D4 /* button.png */; };
+		49F8ABAD189445E00074DF7E /* 3Dtitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F8ABAC189445E00074DF7E /* 3Dtitle.png */; };
+		49F8ABAF189445EF0074DF7E /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F8ABAE189445EF0074DF7E /* title.png */; };
+		49F8ABB218944C4A0074DF7E /* Fipps-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49F8ABB418944C4A0074DF7E /* Fipps-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +60,6 @@
 		492647CA1891937200C4B953 /* WAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAppDelegate.h; sourceTree = "<group>"; };
 		492647CB1891937200C4B953 /* WAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAppDelegate.m; sourceTree = "<group>"; };
 		492647CE1891937200C4B953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		492647D11891937200C4B953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		492647D31891937200C4B953 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		492647D51891937200C4B953 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		492647D71891937300C4B953 /* WViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WViewController.h; sourceTree = "<group>"; };
@@ -63,6 +70,15 @@
 		492647E91891937300C4B953 /* WaddlesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaddlesTests-Info.plist"; sourceTree = "<group>"; };
 		492647EB1891937300C4B953 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		492647ED1891937300C4B953 /* WaddlesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaddlesTests.m; sourceTree = "<group>"; };
+		492647F71891939F00C4B953 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		492647F91891A8B500C4B953 /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin.png; sourceTree = "<group>"; };
+		492647FB1891A8BD00C4B953 /* snowflake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowflake.png; sourceTree = "<group>"; };
+		492647FD1891A8C700C4B953 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		492647FF1891A95800C4B953 /* penguin_noBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin_noBg.png; sourceTree = "<group>"; };
+		49407966189443BA000B85D4 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		49F8ABAC189445E00074DF7E /* 3Dtitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Dtitle.png; sourceTree = "<group>"; };
+		49F8ABAE189445EF0074DF7E /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		49F8ABB318944C4A0074DF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Fipps-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,7 @@
 				492647C01891937200C4B953 /* OpenGLES.framework in Frameworks */,
 				492647BA1891937200C4B953 /* CoreGraphics.framework in Frameworks */,
 				492647BC1891937200C4B953 /* UIKit.framework in Frameworks */,
+				492647F81891939F00C4B953 /* GameKit.framework in Frameworks */,
 				492647BE1891937200C4B953 /* GLKit.framework in Frameworks */,
 				492647B81891937200C4B953 /* Foundation.framework in Frameworks */,
 			);
@@ -113,6 +130,7 @@
 		492647B61891937200C4B953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				492647F71891939F00C4B953 /* GameKit.framework */,
 				492647B71891937200C4B953 /* Foundation.framework */,
 				492647B91891937200C4B953 /* CoreGraphics.framework */,
 				492647BB1891937200C4B953 /* UIKit.framework */,
@@ -129,7 +147,6 @@
 				492647CA1891937200C4B953 /* WAppDelegate.h */,
 				492647CB1891937200C4B953 /* WAppDelegate.m */,
 				492647CD1891937200C4B953 /* Main_iPhone.storyboard */,
-				492647D01891937200C4B953 /* Main_iPad.storyboard */,
 				492647D31891937200C4B953 /* Shader.fsh */,
 				492647D51891937200C4B953 /* Shader.vsh */,
 				492647D71891937300C4B953 /* WViewController.h */,
@@ -143,6 +160,14 @@
 		492647C21891937200C4B953 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				49F8ABB418944C4A0074DF7E /* Fipps-Regular.otf */,
+				49F8ABAC189445E00074DF7E /* 3Dtitle.png */,
+				49F8ABAE189445EF0074DF7E /* title.png */,
+				49407966189443BA000B85D4 /* button.png */,
+				492647FF1891A95800C4B953 /* penguin_noBg.png */,
+				492647FD1891A8C700C4B953 /* background.png */,
+				492647FB1891A8BD00C4B953 /* snowflake.png */,
+				492647F91891A8B500C4B953 /* penguin.png */,
 				492647C31891937200C4B953 /* Waddles-Info.plist */,
 				492647C41891937200C4B953 /* InfoPlist.strings */,
 				492647C71891937200C4B953 /* main.m */,
@@ -217,6 +242,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sumedha Pramod";
 				TargetAttributes = {
+					492647B31891937200C4B953 = {
+						DevelopmentTeam = 69ZDK4Y6QX;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
 					492647DF1891937300C4B953 = {
 						TestTargetID = 492647B31891937200C4B953;
 					};
@@ -246,11 +279,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492647FA1891A8B600C4B953 /* penguin.png in Resources */,
+				49407967189443BA000B85D4 /* button.png in Resources */,
+				49F8ABAF189445EF0074DF7E /* title.png in Resources */,
 				492647D41891937200C4B953 /* Shader.fsh in Resources */,
-				492647D21891937200C4B953 /* Main_iPad.storyboard in Resources */,
+				492647FC1891A8BD00C4B953 /* snowflake.png in Resources */,
+				49F8ABB218944C4A0074DF7E /* Fipps-Regular.otf in Resources */,
+				492648001891A95800C4B953 /* penguin_noBg.png in Resources */,
 				492647CF1891937200C4B953 /* Main_iPhone.storyboard in Resources */,
 				492647DB1891937300C4B953 /* Images.xcassets in Resources */,
+				49F8ABAD189445E00074DF7E /* 3Dtitle.png in Resources */,
 				492647C61891937200C4B953 /* InfoPlist.strings in Resources */,
+				492647FE1891A8C700C4B953 /* background.png in Resources */,
 				492647D61891937200C4B953 /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +351,6 @@
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		492647D01891937200C4B953 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				492647D11891937200C4B953 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		492647EA1891937300C4B953 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -326,6 +358,15 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		49F8ABB418944C4A0074DF7E /* Fipps-Regular.otf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49F8ABB318944C4A0074DF7E /* Base */,
+			);
+			name = "Fipps-Regular.otf";
+			path = Waddles;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -409,10 +450,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Waddles/Waddles-Prefix.pch";
 				INFOPLIST_FILE = "Waddles/Waddles-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,10 +467,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Waddles/Waddles-Prefix.pch";
 				INFOPLIST_FILE = "Waddles/Waddles-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -491,6 +540,7 @@
 				492647F31891937300C4B953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492647F41891937300C4B953 /* Build configuration list for PBXNativeTarget "WaddlesTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +549,7 @@
 				492647F61891937300C4B953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

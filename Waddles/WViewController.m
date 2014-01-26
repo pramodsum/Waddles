@@ -7,8 +7,10 @@
 //
 
 #import "WViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
+#define MOTION_SCALE 5.0
 
 // Uniform index.
 enum
@@ -84,8 +86,18 @@ GLfloat gCubeVertexData[216] =
     GLuint _vertexArray;
     GLuint _vertexBuffer;
 }
+
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
+@property (readonly) BOOL accelerometerAvailable;
+@property (readonly) BOOL gyroAvailable;
+@property (readonly) BOOL deviceMotionAvailable;
+@property NSTimeInterval accelerometerUpdateInterval;
+@property NSTimeInterval gyroUpdateInterval;
+@property NSTimeInterval deviceMotionUpdateInterval;
+@property (readonly) double roll;
+@property (readonly) double pitch;
+@property (readonly) double yaw;
 
 - (void)setupGL;
 - (void)tearDownGL;
@@ -97,11 +109,17 @@ GLfloat gCubeVertexData[216] =
 @end
 
 @implementation WViewController
+    float yaccel;
+    float yvelocity;
+
+    float mostRecentAngle;
+
+@synthesize pts;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 
     if (!self.context) {
@@ -111,17 +129,8 @@ GLfloat gCubeVertexData[216] =
     GLKView *view = (GLKView *)self.view;
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
-    
-    [self setupGL];
-}
 
-- (void)dealloc
-{    
-    [self tearDownGL];
-    
-    if ([EAGLContext currentContext] == self.context) {
-        [EAGLContext setCurrentContext:nil];
-    }
+    [self setupGL];
 }
 
 - (void)didReceiveMemoryWarning
